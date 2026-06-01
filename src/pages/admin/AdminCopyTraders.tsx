@@ -56,7 +56,7 @@ function avatarColor(name: string) {
 // Keep this fallback in lockstep with the default in src/lib/api.ts so image
 // URLs work even when VITE_API_URL is unset (otherwise images 404 against localhost
 // while the API itself talks to production).
-const API_BASE = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://elitebullhood-backend.onrender.com'
+const API_BASE = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://Top Rank Options-backend.onrender.com'
 function imgSrc(url: string | null | undefined) {
   if (!url) return null
   if (url.startsWith('http')) return url

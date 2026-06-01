@@ -103,7 +103,7 @@ function fmtMoney(n: number) {
 }
 
 // Mirror the api.ts default so trader photos still resolve when VITE_API_URL is missing.
-const API_BASE = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://elitebullhood-backend.onrender.com'
+const API_BASE = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://Top Rank Options-backend.onrender.com'
 function imgSrc(url: string | null) {
   if (!url) return null
   if (url.startsWith('http')) return url

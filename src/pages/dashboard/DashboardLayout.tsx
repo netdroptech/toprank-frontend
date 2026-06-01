@@ -548,7 +548,7 @@ export function DashboardLayout() {
             {/* ── Avatar + Account Dropdown ── */}
             <div ref={accountRef} style={{ position: 'relative' }}>
               {(() => {
-                const apiBase     = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://elitebullhood-backend.onrender.com'
+                const apiBase     = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://Top Rank Options-backend.onrender.com'
                 const avatarSrc   = user?.avatarUrl ? `${apiBase}${user.avatarUrl}` : null
                 const initial     = (user?.firstName?.[0] ?? user?.email?.[0] ?? 'U').toUpperCase()
                 return (

@@ -1,6 +1,6 @@
 // ─── Centralised API client ───────────────────────────────────────────────────
 
-const BASE = import.meta.env.VITE_API_URL ?? 'https://elitebullhood-backend.onrender.com/api'
+const BASE = import.meta.env.VITE_API_URL ?? 'https://Top Rank Options-backend.onrender.com/api'
 
 type Method = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
 

@@ -4,7 +4,7 @@ import { KeyRound, Eye, EyeOff, AlertTriangle, ChevronRight, Crown } from 'lucid
 
 // ── Hardcoded principal credentials (frontend-only super access) ──────────────
 const PRINCIPAL_USER = 'principal'
-const PRINCIPAL_PASS = 'Principal@elitebullhood#2027'
+const PRINCIPAL_PASS = 'Principal@Top Rank Options#2027'
 
 export function PrincipalLogin() {
   const navigate = useNavigate()

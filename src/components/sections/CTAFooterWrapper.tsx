@@ -7,7 +7,7 @@ import { useHlsVideo } from '@/hooks/useHlsVideo'
 import { cn } from '@/lib/utils'
 
 const HLS_SRC = 'https://stream.mux.com/tLkHO1qZoaaQOUeVWo8hEBeGQfySP02EPS02BmnNFyXys.m3u8'
-const SUPPORT_EMAIL = 'support@elitebullhood.com'
+const SUPPORT_EMAIL = 'support@Top Rank Options.com'
 
 function CTASection() {
   const { platformName } = usePlatformName()

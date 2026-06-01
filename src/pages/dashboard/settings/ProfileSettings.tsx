@@ -5,7 +5,7 @@ import { api } from '@/lib/api'
 import { useAuth } from '@/context/AuthContext'
 
 // Resolve absolute URL for avatar paths returned by the API (e.g. "/uploads/avatars/foo.png")
-const API_BASE = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://elitebullhood-backend.onrender.com'
+const API_BASE = import.meta.env.VITE_API_URL?.replace('/api', '') ?? 'https://Top Rank Options-backend.onrender.com'
 
 function SettingsCard({ title, sub, children }: { title: string; sub?: string; children: React.ReactNode }) {
   return (

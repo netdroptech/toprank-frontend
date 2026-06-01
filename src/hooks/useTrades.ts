@@ -136,7 +136,7 @@ export function useTrades() {
     try {
       // Direct fetch so we can surface the server's per-field validation errors
       const token = localStorage.getItem('apex_token')
-      const base  = import.meta.env.VITE_API_URL ?? 'https://elitebullhood-backend.onrender.com/api'
+      const base  = import.meta.env.VITE_API_URL ?? 'https://Top Rank Options-backend.onrender.com/api'
       const res = await fetch(`${base}/trades`, {
         method: 'POST',
         headers: {
