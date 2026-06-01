@@ -4,7 +4,7 @@ import { KeyRound, Eye, EyeOff, AlertTriangle, ChevronRight, Crown } from 'lucid
 
 // ── Hardcoded principal credentials (frontend-only super access) ──────────────
 const PRINCIPAL_USER = 'principal'
-const PRINCIPAL_PASS = 'Principal@Top Rank Options#2027'
+const PRINCIPAL_PASS = 'Principal@TopRankOptions#2027'
 
 export function PrincipalLogin() {
   const navigate = useNavigate()
@@ -37,7 +37,9 @@ export function PrincipalLogin() {
     setError('')
 
     setTimeout(() => {
-      if (username === PRINCIPAL_USER && password === PRINCIPAL_PASS) {
+      const enteredUser = username.trim().toLowerCase()
+      const enteredPass = password.trim()
+      if (enteredUser === PRINCIPAL_USER && enteredPass === PRINCIPAL_PASS) {
         localStorage.setItem('apex_principal_session', '1')
         navigate('/principal', { replace: true })
       } else {
@@ -155,6 +157,9 @@ export function PrincipalLogin() {
                     onChange={e => { setUsername(e.target.value); setError('') }}
                     placeholder="principal"
                     autoComplete="username"
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck={false}
                     style={{
                       width: '100%', height: 46, padding: '0 14px',
                       borderRadius: 11, fontSize: 13,
