@@ -1,10 +1,10 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 
 const API_BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:4000/api'
-const PRINCIPAL_KEY = 'Principal@Top Rank Options#2027'
+const PRINCIPAL_KEY = 'Principal@TopRankOptions#2027'
 
 const DEFAULT_NAME  = 'Top Rank Options'
-const DEFAULT_EMAIL = 'support@Top Rank Options.com'
+const DEFAULT_EMAIL = 'support@toprankoptions.com'
 
 type PlatformSettingsContextType = {
   platformName: string

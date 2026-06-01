@@ -164,7 +164,7 @@ function AdminLoginInner() {
                     <input
                       type="email" value={email}
                       onChange={e => { setEmail(e.target.value); setError('') }}
-                      placeholder="admin@Top Rank Options.com" autoComplete="email"
+                      placeholder="admin@toprankoptions.com" autoComplete="email"
                       style={{ width: '100%', height: 46, paddingLeft: 38, paddingRight: 14, borderRadius: 11, fontSize: 13, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', color: 'hsl(40 6% 92%)', outline: 'none', boxSizing: 'border-box', transition: 'border-color 0.15s' }}
                       onFocus={e => (e.target.style.borderColor = 'rgba(167,139,250,0.5)')}
                       onBlur={e  => (e.target.style.borderColor = 'rgba(255,255,255,0.09)')}
